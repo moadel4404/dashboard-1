@@ -504,3 +504,51 @@ div.aside-right .announcements-content h3 {
   }
 }
 
+
+
+@media (max-width: 840px) {
+  .aside-left {
+    display: none;
+  }
+
+  .header {
+    background-color: white;
+    grid-row: span 3;
+    grid-column: 1 / -1;
+    box-shadow: 0px 2px 5px 0 #c4c4c4;
+  }
+
+  .aside-right {
+    grid-column: 32 / -1 ;
+    grid-row: 4 / -1
+  }
+  
+
+  .projects {
+    grid-row: 4 / -1;
+    grid-column: 1 / 32;
+  }
+
+  div.projects > div {
+    display: flex;
+    flex-flow: row wrap; 
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.projects > div > div {
+    width: 95%;
+    height: 245px;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 10px solid #efb428 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: white;
+    box-shadow: 2px 2px 5px 0 #bbb;
+  }
+}
+
